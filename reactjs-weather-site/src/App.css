@@ -1,0 +1,70 @@
+:root {
+  --bg: white;
+  --itemBg: rgb(251, 251, 251);
+  --textColor: black;
+  --textSoftColor: rgb(169, 172, 178);
+  --blueColor: rgb(47,105,254);
+  --redColor: rgb(235,52,52);
+  --grey:#EEF2F4;
+  --darkLight:rgb(45,76,134);
+}
+body {
+  background-color: var(--bg);
+  color: var(--textColor);
+  font-size: 0.875rem;
+}
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+h4 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.bg-right{
+  background: linear-gradient(to right bottom,rgb(89,106,128), rgb(19,43,75));
+}
+.container{
+  margin: auto;
+}
+.icon-md{
+font-size: 2rem;
+}
+.icon{
+  font-size: 1.5rem;
+  }
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #FFF;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  }
+
+  @keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+  } 
+  ::-webkit-scrollbar{
+    display: none;
+  }
+  @media screen and (max-width: 950px) {
+    h2{
+      font-size: 1.35rem;
+    }
+  }

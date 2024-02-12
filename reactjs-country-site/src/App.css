@@ -1,0 +1,62 @@
+:root {
+  --bg: hsl(0, 0%, 98%);
+  --itemBg: hsl(0, 0%, 100%);
+  --textColor: hsl(200, 15%, 8%);
+  --darkGray: hsl(0, 0%, 52%);
+}
+[data-theme="dark"] {
+  --bg: hsl(207, 26%, 17%);
+  --itemBg: hsl(209, 23%, 22%);
+  --textColor: hsl(0, 0%, 100%);
+}
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background-color: var(--bg);
+  color: var(--textColor);
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+h3{
+  font-size: 1.25rem;
+  margin: 10px 0;
+  font-weight: 800;
+}
+h4{
+  font-size: 1rem;
+  margin: 10px 0;
+  font-weight: 800;
+}
+p{
+  margin: .25rem 0;
+}
+.container{
+  max-width: 1232px;
+  width: 100%;
+  margin: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #FFF;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  }
+
+  @keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+  } 
